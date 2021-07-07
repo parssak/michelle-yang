@@ -51,16 +51,6 @@ code {
   margin-top: 6vw;
 }
 
-@media (min-width: 800px) {
-  .hero > *:last-child {
-    display: grid;
-    place-items: center;
-  }
-  .hero {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .hero__img {
   border-radius: 0.5rem;
   width: 100%;
@@ -147,11 +137,13 @@ button.outline:hover {
   border-radius: 0.5rem;
 }
 
-.experience-card h2 {
+.experience-card h2,
+.skills h2 {
   font-size: 1.7rem;
 }
 
-.experience-card h3 {
+.experience-card h3,
+.skills h3 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.3em;
@@ -171,11 +163,6 @@ li {
   color: rgb(206, 206, 206);
 }
 
-@media (min-width: 800px) {
-  .experiences {
-    /* grid-template-columns: 1fr 1fr; */
-  }
-}
 
 hr {
   color: white;
@@ -226,4 +213,33 @@ display: inline;
   opacity: 0.4;
 }
 
+.skills {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+}
 
+.skill {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  footer section .wrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .hero > *:last-child {
+    display: grid;
+    place-items: center;
+  }
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
