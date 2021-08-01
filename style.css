@@ -20,6 +20,7 @@ body {
 section {
   max-width: 1200px;
   padding: 2vh 2vw;
+  padding-bottom: 5vh;
   margin-inline: auto;
   position: relative;
   z-index: 5;
@@ -133,6 +134,7 @@ button.outline:hover {
 }
 
 .experience-card {
+  position: relative;
   background: rgb(102, 102, 102);
   padding: 1rem;
   border-radius: 0.5rem;
